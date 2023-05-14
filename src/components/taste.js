@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./taste.css";
 import axios from "axios";
+import tmdb from "./TMDB logo.jpg";
 
 function ShowForm({ onSubmit }) {
   const [names, setNames] = useState(["", "", ""]);
@@ -93,8 +94,13 @@ function Taste() {
 
   return (
     <div className="maintaste">
-      <h2>LET'S RATE YOUR TASTE</h2>
-      <h3>CUZ WHY NOT?</h3>
+      <div>
+        <div>
+          <h2>LET'S RATE YOUR TASTE</h2>
+          <h3>CUZ WHY NOT?</h3>
+        </div>
+        <img src={tmdb} alt="tmdb" />
+      </div>
       <br />
       <p>Welcome to the Taste Games:</p>
       <p>
