@@ -1,27 +1,30 @@
 import React from "react";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import "./mainpage.css";
+import { Link, useMatch } from "react-router-dom";
 
 function NavBar() {
   return (
-    <nav>
-      <Link to="/">My Portfolio</Link>
-      <ul>
-        <CustomLink to="/me"> Me </CustomLink>
-        <CustomLink to="/humor"> Humor </CustomLink>
-      </ul>
+    <nav className="navbar">
+      <div>
+        <h3>ROY</h3>
+        <h3>MAYANK</h3>
+      </div>
+      <div className="navbarlinks">
+        <CustomLink to="/">Home</CustomLink>
+        <CustomLink to="/aboutme">About Me</CustomLink>
+        <CustomLink to="/taste">Taste</CustomLink>
+      </div>
     </nav>
   );
 }
 
 function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
+  const match = useMatch(to);
 
   return (
-    <li>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
+    <Link to={to} className={match ? "active" : ""} {...props}>
+      {children}
+    </Link>
   );
 }
 

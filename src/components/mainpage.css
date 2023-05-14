@@ -1,47 +1,150 @@
-* {
-  background-color: aliceblue;
-}
+/* Global styles */
 
-body,
-html {
+body {
   margin: 0;
   padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f3f1f5;
 }
 
-.nav {
-  width: 100%;
-}
+/* Navbar styles */
 
-.nav nav {
+.navbar {
   display: flex;
-  padding: 0.5rem;
-  gap: 1em;
-  background-color: rgb(146, 25, 146);
+  align-items: end;
+  justify-content: space-between;
+  background-color: #d036e9;
+  height: 80px;
+  padding: 10px;
+  line-height: 30px;
 }
 
-.nav nav a {
-  display: inline;
-  padding: 1rem;
-  width: 33.34%;
-  color: aliceblue;
+.navbar h3 {
+  color: white;
+  padding-left: 20px;
+  font-size: 32px;
+  vertical-align: baseline;
+  line-height: 37px;
+  padding-right: 5px;
+  padding-left: 45px;
+}
+
+.navbar h3:last-child {
+  color: #000;
+  padding-left: 4px;
+}
+
+.navbar div {
+  display: flex;
+  align-items: end;
+}
+
+.navbarlinks {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.navbar a.active {
+  color: black;
+}
+
+.navbar a {
   text-decoration: none;
-  background-color: rgb(146, 25, 146);
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 6px;
 }
 
-.nav nav a:hover {
-  background: rgb(187, 19, 187);
+.navbar a:hover {
+  color: black;
 }
+
+/* Picname styles */
 
 .picname {
-  padding: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 1rem;
 }
 
-.picname table {
-  width: 100%;
-  height: 4rem;
+.picname div {
+  padding: 30px;
+  overflow: hidden;
 }
 
-.image {
-  width: fit-content;
+.picname div:last-child {
+  height: 80%;
+  align-items: start;
+}
+
+.picname img {
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: transform 0.5s ease-out;
+}
+
+.picname :hover img {
+  transform: scale(1.2);
+}
+
+.picname h1 {
+  font-size: 2em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 20px;
+  letter-spacing: 0.15rem;
+}
+
+.picname h4 {
+  letter-spacing: 0.06rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: italic;
+}
+
+/* Quote styles */
+.quote {
+  display: flex;
+  justify-content: center;
+  width: 60%;
   height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e6d3ef;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+}
+
+.quote p {
+  vertical-align: middle;
+  letter-spacing: 0.16cm;
+  margin: auto;
+}
+
+/* Resume styles */
+
+.resume {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume iframe {
+  height: calc(100vh - 200px);
+  width: 100%;
 }

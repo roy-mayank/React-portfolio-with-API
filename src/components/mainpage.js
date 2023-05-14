@@ -1,27 +1,32 @@
 import React from "react";
 import "./mainpage.css";
+import resumePdf from "./resume.pdf";
+import linkedinPfp from "./my linkedin pfp.jpg";
 
-function Picname() {
+function Picfolio() {
   return (
-    <div className="picname">
-      <table>
-        <tr>
-          <td className="image">
-            <img src="./gigachad.jpg" alt="Mayank" />
-          </td>
-          <td>
-            <h2> MAYANK ROY </h2>
-          </td>
-        </tr>
-      </table>
-    </div>
+    <>
+      <div className="picname">
+        <div>
+          <img src={linkedinPfp} alt="mayank" />
+        </div>
+        <div>
+          <h1> MY PORTFOLIO </h1>
+          <br />
+          <h4> USING REACT.JS </h4>
+        </div>
+      </div>
+      <div className="quote">
+        <p>"IT IS WHAT IT IS"</p>
+      </div>
+    </>
   );
 }
 
 function Resume() {
   return (
-    <div>
-      <iframe title="Resume" src="./resources/resume.pdf" width="80%"></iframe>
+    <div className="resume">
+      <iframe title="Resume" src={resumePdf} alt="resume" />
     </div>
   );
 }
@@ -29,7 +34,7 @@ function Resume() {
 function Home() {
   return (
     <div>
-      <Picname />
+      <Picfolio />
       <Resume />
     </div>
   );
