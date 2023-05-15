@@ -40,14 +40,10 @@ function Form({ onSubmit }) {
 }
 
 function AboutMe() {
-  const [name, setName] = useState("");
-  const [number, setNumber] = useState("");
   const [decision, setDecision] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleFormSubmit = (name, number) => {
-    setName(name);
-    setNumber(number);
     setDecision("AaEeIiOoUu".includes(name[0]) && number > 5 ? "Y" : "N");
     setFormSubmitted(true);
   };
