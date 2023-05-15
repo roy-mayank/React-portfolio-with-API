@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./taste.css";
 import axios from "axios";
-import tmdb from "./TMDB logo.jpg";
+import tmdb from "./logo.png";
 
 function ShowForm({ onSubmit }) {
   const [names, setNames] = useState(["", "", ""]);
