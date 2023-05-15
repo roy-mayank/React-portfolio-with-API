@@ -1,11 +1,9 @@
-/* Reset styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Global styles */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -36,6 +34,12 @@ body {
 .maintaste div div h3 {
   font-size: 20px;
   letter-spacing: 0.2rem;
+}
+
+.mixedform {
+  align-self: center !important;
+  margin: auto !important;
+  display: inline !important;
 }
 
 img {

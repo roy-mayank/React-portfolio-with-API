@@ -29,8 +29,6 @@ function ShowForm({ onSubmit }) {
           onChange={(event) => handleNameChange(0, event.target.value)}
           required
         />
-        <br />
-        <br />
 
         <label>Enter 2nd TV/Movie:</label>
         <input
@@ -39,8 +37,6 @@ function ShowForm({ onSubmit }) {
           onChange={(event) => handleNameChange(1, event.target.value)}
           required
         />
-        <br />
-        <br />
 
         <label>Enter 3rd TV/Movie:</label>
         <input
@@ -49,8 +45,6 @@ function ShowForm({ onSubmit }) {
           onChange={(event) => handleNameChange(2, event.target.value)}
           required
         />
-        <br />
-        <br />
 
         <button type="submit">Submit</button>
       </form>
@@ -108,8 +102,7 @@ function Taste() {
         yer head and we calculate a score for ye based on its popularity and
         ratings.
       </p>
-      <p>Have fun ;)</p>
-      <br />
+      <p> (scroll down after submit) . Have fun ;)</p>
       <ShowForm onSubmit={handleSubmit} />
 
       {results.length > 0 && (

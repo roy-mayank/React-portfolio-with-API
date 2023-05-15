@@ -13,7 +13,7 @@ function Form({ onSubmit }) {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Name:
+        Enter your Name:
         <input
           type="text"
           value={name}
@@ -21,7 +21,6 @@ function Form({ onSubmit }) {
           required
         />
       </label>
-      <br />
       <label>
         Pick a number between 1 and 10:
         <input
@@ -33,7 +32,6 @@ function Form({ onSubmit }) {
           required
         />
       </label>
-      <br />
       <button type="submit">Submit</button>
     </form>
   );
