@@ -68,9 +68,9 @@ function AboutMe() {
         {formSubmitted && (
           <div className="likes">
             <h2> My Likes </h2>
-            <p> I like {decision === "Y" ? "You" : "Maps and Geography"}</p>
+            <p> I like {decision === "Y" ? "You" : "G-Wagons"}</p>
             <h2> My Dislikes</h2>
-            <p> I HATE {decision === "N" ? "You" : "Your Mum"}</p>
+            <p> I HATE {decision === "N" ? "You" : "Wagon-Rs"}</p>
           </div>
         )}
       </main>
