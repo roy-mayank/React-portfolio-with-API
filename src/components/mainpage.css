@@ -6,6 +6,19 @@ body {
   background-color: #f3f1f5;
 }
 
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d036e9;
+  border-radius: 4px;
+}
+
 .navbar {
   display: flex;
   align-items: flex-end;
